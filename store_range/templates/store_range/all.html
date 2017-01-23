@@ -1,19 +1,16 @@
 {% extends 'main.html' %}
-{% load staticfiles %}
+{% load static from staticfiles %}
 {% block products %}
-<style>
-
-</style>
 
 <div style="text-align: center;">
     <img src= "{% static 'images/cookies.png' %}" align="middle">
 </div>
 
-<ul class="rig columns-4">
+<ul class="rig columns-3">
     {% for pr in prod %}
     <li>
         <img src="{{ pr.image.url }}">
-        <h3>{{ pr.name }}</h3>
+        <h4>{{ pr.name }}</h4>
         <p>{{ pr.description }}</p>
     </li>
     {% endfor %}
