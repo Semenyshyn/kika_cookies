@@ -1,3 +1,4 @@
+whitenoise
 attrs==16.2.0
 cffi==1.9.1
 constantly==15.1.0
