@@ -1,0 +1,1 @@
+web: gunicorn kika.wsgi --log-file -
