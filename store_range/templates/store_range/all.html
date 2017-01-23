@@ -1,33 +1,22 @@
 {% extends 'main.html' %}
-{% load static from staticfiles %}
+{% load staticfiles %}
 {% block products %}
+<style>
 
-<head>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'mystyle.css' %}">
-</head>
-
+</style>
 
 <div style="text-align: center;">
     <img src= "{% static 'images/cookies.png' %}" align="middle">
 </div>
 
-
-<div class="container">
-  {% for pr in prod %}
-  <div class="col-md-3">
-    <div class="thumbnail">
-      {% if pr.image %}
-        <img src="{{ pr.image.url }}" alt="Lights" style="width:100%"   >
-      {% endif %}
-      <div class="caption">
+<ul class="rig columns-4">
+    {% for pr in prod %}
+    <li>
+        <img src="{{ pr.image.url }}">
+        <h3>{{ pr.name }}</h3>
         <p>{{ pr.description }}</p>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
+    </li>
+    {% endfor %}
+</ul>
 
 {% endblock %}
-
-

@@ -33,13 +33,11 @@ body {
 
 ul.rig {
 	list-style: none;
-	/*font-size: 0px;*/
 	margin-left: -2.5%; /* should match li left margin */
 }
-
 ul.rig li {
 	display: inline-block;
-	padding: 10px;
+	padding: 7px;
 	margin: 0 0 2.5% 2.5%;
 	background: #fff;
 	border: 1px solid #ddd;
@@ -51,7 +49,6 @@ ul.rig li {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-
 ul.rig li img {
 	max-width: 100%;
 	height: auto;
@@ -67,7 +64,7 @@ ul.rig li p {
 }
 /* class for 2 columns */
 ul.rig.columns-2 li {
-	width: 47.5%; /* this value + 2.5 should = 50% */
+	width: 30.83%; /* this value + 2.5 should = 50% */
 }
 /* class for 3 columns */
 ul.rig.columns-3 li {
