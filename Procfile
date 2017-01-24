@@ -1,1 +1,1 @@
-web: gunicorn kika_cookies.wsgi --log-file -
+web: gunicorn kika.wsgi --log-file -
