@@ -20,10 +20,10 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/main/templates" />
-        <option value="$MODULE_DIR$/main/templates/main" />
         <option value="$MODULE_DIR$/store_range/templates" />
         <option value="$MODULE_DIR$/store_range/templates/store_range" />
+        <option value="$MODULE_DIR$/basked/templates" />
+        <option value="$MODULE_DIR$/basked/templates/basked" />
       </list>
     </option>
   </component>

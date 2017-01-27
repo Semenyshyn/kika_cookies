@@ -26,8 +26,11 @@ SECRET_KEY = 'r4*g$=k@^elj+8envb-vr7%u*j_t9p=j4m^gi5=dpk#8*@2rbs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kikacookies.herokuapp.com',
-                 '127.0.0.1']
+ALLOWED_HOSTS = [
+    'kika-cookies.herokuapp.com',
+    'kikacookies.herokuapp.com',
+    '127.0.0.1'
+]
 
 
 # Application definition
