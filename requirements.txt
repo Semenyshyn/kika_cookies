@@ -1,10 +1,12 @@
 attrs==16.2.0
+boto==2.45.0
 cffi==1.9.1
 constantly==15.1.0
 cryptography==1.6
 cssselect==1.0.0
 dj-database-url==0.4.2
 Django==1.10.3
+django-storages==1.5.2
 gunicorn==19.6.0
 idna==2.1
 incremental==16.10.1
