@@ -21,7 +21,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('store_range.urls')),
-    # url(r'^store/', include('store_range.urls'))
 ]
 
 if settings.DEBUG:

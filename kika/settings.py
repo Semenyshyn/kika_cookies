@@ -26,7 +26,8 @@ SECRET_KEY = 'r4*g$=k@^elj+8envb-vr7%u*j_t9p=j4m^gi5=dpk#8*@2rbs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kikacookies.herokuapp.com']
+ALLOWED_HOSTS = ['kikacookies.herokuapp.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store_range.apps.StoreRangeConfig'
+    'store_range.apps.StoreRangeConfig',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -139,6 +141,15 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-MEDIA_URL = '/media/'
+# MEDIA_URL = '/media/'
+
+MEDIA_URL = "http://kikabucket.s3.amazonaws.com/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+AWS_S3_SECURE_URLS = False       # use http instead of https
+AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
+AWS_ACCESS_KEY_ID = "AKIAINL5CFPVMGEFEXIQ"
+AWS_SECRET_ACCESS_KEY = "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"
+AWS_STORAGE_BUCKET_NAME = 'kikabucket'
